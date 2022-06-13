@@ -1,9 +1,10 @@
-const canvas = document.getElementById('canvas')
-const ctx = canvas.getContext('2d')
-const nameInput = document.getElementById('name')
-const downloadBtn = document.getElementById('download-btn')
+var canvas = document.getElementById('canvas')
+var ctx = canvas.getContext('2d')
+var nameInput = document.getElementById('name')
+var downloadBtn = document.getElementById('download-btn')
 
-const image = new Image()
+var image = new Image()
+image.crossOrigin="anonymous";
 image.src = 'certificate.jpg'
 image.onload = function () {
 	drawImage()
